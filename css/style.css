@@ -1,0 +1,584 @@
+/* 
+    Created on : Apr 11, 2015, 12:15:45 PM
+    Author     : Diwakar
+*/
+
+/*******************************************
+*******************BODY*********************
+********************************************/
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
+body {
+  background: #1d1d1d;
+  color: #ccc;
+  font-size: 1.3em;
+  line-height: 189%;
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1, p {
+    word-spacing: 3px;
+}
+
+h1 {  
+    font-family: "OpenSans-Light", Arial, sans-serif;
+    font-size: 2em;
+    color: #80BD01;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*******************************************
+*******************Header*******************
+********************************************/
+
+#logo {
+    width: 182px;
+    padding-left: 10px;
+}
+
+nav {
+    width: 100%;
+    background: #303030;
+    float: left;
+    position: fixed;
+}
+
+nav ul {
+    margin-left: 29%;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+}
+
+nav ul li:hover {
+    background: #1d1d1d;
+    transition: all .3s linear;
+}
+
+nav ul li a {
+    font-size: 24px;
+    padding: 0 12px;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #73A53E;
+    transition: all .3s linear;
+}
+
+nav li a.active {
+    background: #1d1d1d;
+    padding-bottom: 6px;
+    padding-top: 1px;
+}
+
+.borderLeft a {
+    border-left: 1px solid;
+}
+
+/*
+#navBtn {
+    background:url(../images/nav_btn.gif);
+    width: 50px;
+    height: 13px;
+    padding-top: 28px;
+    margin-left: 2%;
+    border-radius: 3px;
+}
+
+#navBtn:hover {
+    background: url(../images/nav_btn_active.gif);
+}
+*/
+
+#navLine1, #navLine2, #navLine3 {
+    background-color: white;
+}
+#navLine1 {
+    height: 3px;
+}
+#navLine2 {
+    height: 3px;
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+#navLine3 {
+    height: 3px;
+}
+#navBtn:hover #navLine1{
+    background: #73A53E;
+    transition: all 0.1s linear;
+    transform: rotate(10deg);
+}
+#navBtn:hover #navLine2{
+    background: #73A53E;
+    transition: all 0.1s linear;
+    
+}
+#navBtn:hover #navLine3{
+    background: #73A53E;
+    transition: all 0.1s linear;
+    transform: rotate(-10deg);
+}
+
+#navBtn {
+    
+    width: 40px;
+    height: 13px;
+    padding-bottom: 22px;
+    margin-left: 2%;
+}
+#navBtn:hover {
+    
+    cursor: pointer;
+}
+
+.miniNav {
+    padding-top: 120px;
+    background: #303030;
+}
+
+.miniNav ul {
+    height: 0px;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    background-color: #1d1d1d;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.miniNav ul li:hover{
+    background: #303030;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.miniNav ul li a {
+    font-size: 24px;
+    padding: 0 12px;
+    color: white;
+}
+
+.miniNav ul li a:hover {
+    color: #73A53E;
+    transition: all .3s linear;
+}
+
+.miniNav ul li a.active{
+    background: #303030;
+    padding-bottom: 6px;
+    padding-top: 1px;
+}
+
+/*******************************************
+*********************Slider*****************
+********************************************/
+
+.cycle-slideshow {
+   width: 100%;
+   display: block;
+   position: relative;
+   margin: 4px auto;
+   overflow: hidden; 
+   cursor: pointer;
+}
+
+.cycle-prev, .cycle-next {
+    font-size: 400%;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.cycle-prev {
+    left: 5px;
+}
+
+.cycle-next {
+    right: 5px;
+}
+
+.cycle-pager {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.cycle-pager span {
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.cycle-pager .cycle-pager-active {
+    background: #fff;
+}
+
+/*******************************************
+*****************Main Content***************
+********************************************/
+
+.mainContent {
+    width: 80%;
+    text-align: center;
+    padding-left: 10%;
+}
+
+.toggleBtn {
+    padding: 0.5% 0 0.5% 0;
+    margin:0 40% 2% 40%;
+    background: #303030;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.toggleBtn:hover {
+    background: #000;
+    transition: all .4s linear;    
+}
+
+
+#panel {
+    display: none;
+}
+
+/*******************************************
+*********************Footer*****************
+********************************************/
+
+footer {
+    position: relative;
+	background: #303030;
+	margin: 0px auto 0px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+	margin: 0px;
+    font-size: 0.8em;
+}
+
+.scrollToTop {
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    color: #fff;  
+    cursor: pointer;
+    display: none;
+}
+
+/*******************************************
+****************Media Queries***************
+********************************************/
+
+
+@media (min-width:1000px) and (max-width:1280px) {
+    nav ul {
+        margin-left: 25%;
+    }
+}
+@media (min-width:900px) and (max-width:1000px) {
+    nav ul {
+        margin-left: 20%;
+    }
+    
+}
+@media (min-width:800px) and (max-width:900px) {
+    nav ul {
+        margin-left: 15%;
+    }
+    
+}
+@media (min-width:800px) and (max-width:1280px) {
+    .mainContent {
+        width: 90%;
+        padding-left: 5%;
+    }
+}
+@media (min-width:672px) and (max-width:799px) {
+    nav ul {
+        margin-left: 10%;
+    }
+    .cycle-slideshow > .cycle-next, .cycle-slideshow > .cycle-prev{
+        font-size: 200%;
+    }
+    .mainContent {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media (min-width:607px) and (max-width:671px) {
+    nav ul {
+        margin-left:0;
+    }
+   .mainContent {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+@media (min-width:740px) and (max-width: 1920px){
+    .miniNav {
+        height:0px;
+        overflow: hidden;   
+    }
+    .miniNav  li {
+        height: 40px;
+    }
+   
+}
+@media (min-width:300px) and (max-width:740px) {
+    
+    nav ul {
+        margin-left:0;
+        width: 0px;
+        height:0px;
+        overflow: hidden;
+    }
+    .mainContent {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+}
+@media (min-width:100px) and (max-width:671px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.6em;
+    }
+    .mainContent {
+        width: 100%;
+        padding-left: 0;
+    }
+    .cycle-slideshow > .cycle-next, .cycle-slideshow > .cycle-prev{
+        font-size: 150%;
+    }
+    .cycle-slideshow > .cycle-pager {
+        visibility: hidden;
+    } 
+    .timeline-event a {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width:672px) and (max-width:1280px) {
+        #panel {
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+@media (min-width:100px) and (max-width:671px) {
+    .toggleBtn, .toggleBtn2 {
+        font-size: 0.8em;
+    }
+
+    #panel {
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer {
+       // height: 3%;
+    }
+    footer p{
+        font-size: 0.5em;
+    }
+    
+}
+
+
+
+/*************************************************
+**************** Let's Start Pages ***************
+**************************************************/
+
+.startContent{
+    width: 65%;
+    padding-left: 15%;
+    margin-bottom: 50px;
+}
+
+input[type="radio"] {
+    display:none;
+}
+label {
+  width:23%;
+  float:left;
+  text-align:center;
+  background:#303030;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color:#fff;
+  padding:0.5%;
+  margin:0.5% 0.5%;
+  margin-bottom:1%;
+  cursor:pointer;
+}
+label:hover {
+    background: #73A53E;
+}
+input[type="radio"][id="blue"]:checked + label {
+  background:#73A53E;
+}
+input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .green {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="radio"][id="red"]:checked + label {
+  background:#73A53E;
+}
+input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .green {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="radio"][id="green"]:checked + label {
+  background:#73A53E;
+}
+input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]:checked ~ .red {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+.tile {
+  width:100%;
+  height:100%;
+  float:left;
+  margin:0.5%;
+  padding:0.5%;
+  overflow: hidden;
+}
+.green, .red, .blue {
+  background:#303030;
+}
+.left_one {
+    float: left;
+    width: 20%;
+}
+.right_one {
+    width: 75%;
+    float: right;
+}
+.more_info {
+    background: #73A53E;
+}
+.more_info > a{
+    color: #fff;
+}
+.more_info:hover {
+    background: #1d1d1d;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+.panel {
+    text-align: left;
+    
+}
+.panel {
+    width: 80%;
+    display: none;
+}
+.panel > p > a {
+    color: #fff;
+    text-decoration: underline;
+}
+.panel > p > a:hover {
+    color: #73A53E;
+    text-decoration: none;
+}
+.code > p{
+    background: #1d1d1d;
+    font-size: 0.7em;
+    line-height: 120%;
+    padding-left: 1%;
+}
+
+
+.downloadBtn {
+    position: relative;
+    padding: 0.5% 0 0.5% 0;
+    margin:0;
+    background: #303030;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+}
+.downloadBtn {
+        border: 2px solid rgba(115, 165, 62, 0.28);
+        margin-top: 5px;
+}
+.downloadBtn a {
+        text-decoration: none;
+        color: #fff;
+}
+
+.downloadBtn:hover {
+        background: #73A53E;
+        transition: all .3s linear;
+        cursor: pointer;
+    }
+
+
+/*************************************************
+*************** Technology & Features ************
+**************************************************/
+
+
+#technology img, #features img {
+  height: auto;
+  float: left;
+  width: 15%;
+  margin-top: 0%;
+}
