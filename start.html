@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <title> Node.js - Getting Started</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="mainNav">
+                <a href="index.html"><img id="logo" src="images/logo.gif" alt="logo"></a>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="borderLeft"><a href="history.html">History</a></li>
+                <li class="borderLeft"><a href="technology.html">Technology</a></li>
+                <li class="borderLeft"><a href="features.html">Features</a></li>
+                <li class="borderLeft"><a href="start.html" class="active">Let's Start</a></li>
+                </ul>
+            </nav>
+            <div class="miniNav">
+            <div id="navBtn">
+                <div class="active" id="navLine1"></div>
+                <div class="active" id="navLine2"></div>
+                <div class="active" id="navLine3"></div>
+            </div>
+                <ul id="mobNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="start.html" class="active">Let's Start</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="mainContent">
+            <article>
+                <h1>Before Begining</h1>
+                <p>Since, Node.js is JavaScript runtime engine, the knowledge of JavaScript Language is important to program in Node.js Environment. We recommend you to study "Eloquent Javascript" book to learn JavaScript.</p>
+            </article> 
+            <article>
+                <h1>Installation Guides</h1>
+                <p>Current version: v0.12.4</p>
+            </article> 
+
+
+            <article class="startContent">
+                <input type="radio" id="blue" name="color" checked />
+                <label for="blue" style="margin-left: 13%;">Windows</label>
+                <input type="radio" id="red" name="color"/>
+                <label for="red">Macintosh</label>
+                <input type="radio" id="green" name="color"/>
+                <label for="green">Linux</label>
+                
+                <div class="tile blue">
+                    <div class="left_one">
+                        <div>
+                            <a href="http://azure.microsoft.com/en-us/develop/nodejs/" target="_blank"><img src="images/start/platform-icon-win.png" alt="windows"/></a>
+                        </div>
+                        <div class="downloadBtn">
+                            <a href="http://nodejs.org/dist/v0.12.4/node-v0.12.4-x86.msi"><img src="images/start/download.png" alt="download" style="overflow: hidden; width: 10%;"/> 32-bit</a>
+                        </div>
+                        <div class="downloadBtn">
+                            <a href="http://nodejs.org/dist/v0.12.4/node-v0.12.4-x86.msi"><img src="images/start/download.png" alt="download" style="overflow: hidden; width: 10%;"/> 64-bit</a>
+                        </div>
+                    </div>
+                    <div class="right_one">
+                        <h2>Windows Installation</h2>
+                        <p>
+                            Step 1: Download node-v0.12.4-(x86/x64).msi file.
+                            <br> Step 2: Install it.
+                            <br> Step 3: Open node.exe
+                        </p>
+                        <br>
+                        <div class="more_info" >View Image Preview of Node Installation</div>
+                        <div class="panel">
+                            <p>Select the package you want to install.</p>
+                            <img src="images/start/windows1.png" alt="windows image 1"/>
+                            <p>Install the package.</p>
+                            <img src="images/start/windows2.png" alt="windows image 2"/>
+                            <p>After installing check if it is up and running the command line node application.</p>
+                            <img src="images/start/windows3.png" alt="windows image 3"/>
+                            <p>To exit the node.js session just hit ‘control’ + ‘c’ twice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile red">
+                    <div class="left_one">
+                        <div>
+                            <a href="https://www.npmjs.com/package/osx" target="_blank"><img src="images/start/platform-icon-osx.png" alt="macintosh"/></a>
+                        </div>
+                        <div class="downloadBtn">
+                            <a href="http://nodejs.org/dist/v0.12.4/node-v0.12.4-darwin-x86.tar.gz"><img src="images/start/download.png" alt="download" style="overflow: hidden; width: 10%;"/> 32-bit</a>
+                        </div>
+                        <div class="downloadBtn">
+                            <a href="http://nodejs.org/dist/v0.12.4/node-v0.12.4-darwin-x64.tar.gz"><img src="images/start/download.png" alt="download" style="overflow: hidden; width: 10%;"/> 64-bit</a>
+                        </div>
+                    </div>
+                    <div class="right_one">
+                        <h2>Macintosh Installation</h2>
+                        <p>  Step 1: Download node-v0.12.4-darwin-(x86/x64).tar.gz file.
+                            <br>Step 2: Install it.
+                        </p>
+                        <br>
+                        <div class="more_info" >View Image Preview of Node Installation</div>
+                        <div class="panel">
+                            <p>Install the package</p>
+                            <img src="images/start/mac1.png" alt="macintosh image 1"/>
+                            <p>At the end of the installation process you are prompted to make sure that /usr/local/bin is in your path, double check to see you have it by running in the Terminal:</p>
+                            <img src="images/start/mac2.png" alt="macintosh image 2"/>
+                            <p>After installing, check if it is running by entering the give code in command line node which will open the node JavaScript session:</p>
+                            <img src="images/start/mac3.png" alt="macintosh image 3"/>
+                            <p>To exit the node.js session just hit ‘control’ + ‘c’ twice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile green">
+                    <div class="left_one">
+                        <div>
+                            <a href="http://blog.teamtreehouse.com/install-node-js-npm-linux" target="_blank"><img src="images/start/platform-icon-ubuntu.png" alt="ubuntu"/></a>
+                        </div>
+                        <div class="downloadBtn">
+                            <a href="http://nodejs.org/dist/v0.12.4/node-v0.12.4-linux-x86.tar.gz"><img src="images/start/download.png" alt="download" style="overflow: hidden; width: 10%;"/> 32-bit</a>
+                        </div>
+                        <div class="downloadBtn">
+                            <a href="http://nodejs.org/dist/v0.12.4/node-v0.12.4-linux-x64.tar.gz"><img src="images/start/download.png" alt="download" style="overflow: hidden; width: 10%;"/> 64-bit</a>
+                        </div>
+                    </div>
+                    <div class="right_one">
+                        <h2>Linux Distro Installation</h2>
+                        <p>  Method 1: Download the 32-bit or 64-bit file and install it.
+                            <br> Method 2: You can also install node.js from terminal:
+                            <br> a) First, install  Linux brew by running this command in the terminal:
+                            <span class="code"><p> ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)" </p></span>
+                            <br> b) Then, install node.js by running the following command in the terminal:
+                            <span class="code"><p> brew install node </p></span>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <p>Copyright © 2015 · L1C6 Group4</p>    
+            <a class="scrollToTop" src=""><img src="images/go_to_top.png"></div></a>
+        </footer>
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

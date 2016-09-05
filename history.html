@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <title> Node.js - History </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    </head>
+    <body>
+        <header>
+            <nav class="mainNav">
+                <a href="index.html"><img id="logo" src="images/logo.gif" alt="logo"></a>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="borderLeft"><a href="history.html" class="active">History</a></li>
+                <li class="borderLeft"><a href="technology.html">Technology</a></li>
+                <li class="borderLeft"><a href="features.html">Features</a></li>
+                <li class="borderLeft"><a href="start.html">Let's Start</a></li>
+                </ul>
+            </nav>
+            <div class="miniNav">
+            <div id="navBtn">
+                <div class="active" id="navLine1"></div>
+                <div class="active" id="navLine2"></div>
+                <div class="active" id="navLine3"></div>
+            </div>
+                <ul id="mobNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html" class="active">History</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="start.html">Let's Start</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="mainContent">
+            <div class="container">
+                <h1>History of Node.js</h1>
+                <p class="lead">Node.js was created by Ryan Dahl in 2009. It was created due to the need of technology for real-time web application. All the development history of node.js are available at <a href="https://nodejs.org/changelog.html">Development Changelog</a>.
+                <br> While, some major changes on node.js are presented below</p>
+
+                <div id="timeline" class="timeline-container">
+                    <button class="timeline-toggle">+ expand all</button>
+                    <br class="clear">
+                    <div class="timeline-wrapper">
+                        <h2 class="timeline-time"><span>1995</span></h2>
+                        <dl class="timeline-series">
+                            <span class="tick tick-before"></span>
+                            <dt id="robots" class="timeline-event"><a>JavaScript</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="robotsEX">
+                                <div class="media">
+                                   <img src="images/history/JavaScript.png" alt="Javascript">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>JavaScript was created in 1995 by Brendan Eich while working at Netscape. JavaScript made the foundation for browser side programming as per events. It was widely adopted by other browsers too as ECMA script.</p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                        </dl><!-- /.timeline-series -->
+                    </div><!-- /.timeline-wrapper -->
+
+                    <div class="timeline-wrapper">
+                        <h2 class="timeline-time"><span>2008</span></h2>
+                        <dl class="timeline-series">
+                            <span class="tick tick-before"></span>
+                            <dt id="robots" class="timeline-event"><a>Google V8 Engine</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="robotsEX">
+                                <div class="media">
+                                   <img src="images/history/v8.png" alt="Google v8 Engine">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>Google v8 Engine is a JavaScript Engine created by google to execute JS scripts in Chrome Browser. While its inception, v8 Engine was game changer because it compiles JS to machine code before executing, instead traditional interpretation as bytecode.
+                                    And it executes JS codes in server side for Node.js applications.  </p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                        </dl><!-- /.timeline-series -->
+                    </div><!-- /.timeline-wrapper -->
+
+                    <div class="timeline-wrapper">
+                        <h2 class="timeline-time"><span>2009</span></h2>
+                        <dl class="timeline-series">
+                            <span class="tick tick-before"></span>
+                            <dt id="robots" class="timeline-event"><a>Node.JS was published</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="robotsEX">
+                                <div class="media">
+                                   <img src="images/history/nodeJS.png" alt="Node JS">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>Node.js first version was published in 2009, during European JS Conference. The first version used v8 engine and already had core functions such as event loop, and low level I/O.</p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                        </dl><!-- /.timeline-series -->
+                    </div><!-- /.timeline-wrapper -->
+
+                    <div class="timeline-wrapper">
+                        <h2 class="timeline-time"><span>2011</span></h2>
+                        <dl class="timeline-series">
+                            <span class="tick tick-before"></span>
+                            <dt id="cars" class="timeline-event"><a>npm package manager</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="carsEX">
+                                <div class="media">
+                                    <img src="images/history/npm.png" alt="npm package manager">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>npm is the package manager for node.js created in 2011. It allows to share the packages over the web. However its major task is to update compatible packages in the projects. It also has huge number of package collection. It has been the important motivator for adoption of node.js</p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                            <span class="tick tick-before"></span>
+                            <dt id="urbanity" class="timeline-event"><a>Microsoft</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="urbanityEX">
+                                <div class="media">
+                                    <img src="images/history/Microsoft.jpg" alt="Microsoft">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>Microsoft partnered with node.js team to create native windows versions of node.js.</p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                        </dl><!-- /.timeline-series -->
+                    </div><!-- /.timeline-wrapper -->
+
+                    <div class="timeline-wrapper">
+                        <h2 class="timeline-time"><span>2012</span></h2>
+                        <dl class="timeline-series">
+                            <span class="tick tick-before"></span>
+                            <dt id="robots" class="timeline-event"><a>Dahl Stepped Aside</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="robotsEX">
+                                <div class="media">
+                                   <img src="images/history/ryan.jpg" alt="Ryan Dahl">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>Rayn Dahl, the founder of node.js stepped down as head of development team. Isaac Schlueter, npm creater was promoted to take Rayn Dahl place.</p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                        </dl><!-- /.timeline-series -->
+                    </div><!-- /.timeline-wrapper -->
+
+                    <div class="timeline-wrapper">
+                        <h2 class="timeline-time"><span>2014</span></h2>
+                        <dl class="timeline-series">
+                            <span class="tick tick-before"></span>
+                            <dt id="robots" class="timeline-event"><a>io.js</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="robotsEX">
+                                <div class="media">
+                                   <img src="images/history/io.png" alt="IO JS">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>Fedor Indutny started io.js as fork of Node.js. Node.js development was seen under corporate influence as its progress was controlled by Joyent Foundation. Due to internal conflict over Joyent's governance, io.js was created as an open governance alternative with a separate technical committee.</p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                            <span class="tick tick-before"></span>
+                            <dt id="robots" class="timeline-event"><a>Node v0.12.0 (Stable) released</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="robotsEX">
+                                <div class="media">
+                                   <img src="images/history/node.png" alt="node js">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>The major version of node.js v0.12.0 was released. The version contained major technology upgrade and bug fixing. Among major changes, infinity 'HTTP maxSockets' from limited 5 was important.</p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                        </dl><!-- /.timeline-series -->
+                    </div><!-- /.timeline-wrapper -->
+
+                    <div class="timeline-wrapper">
+                        <h2 class="timeline-time"><span>2015</span></h2>
+                        <dl class="timeline-series">
+                            <span class="tick tick-before"></span>
+                            <dt id="robots" class="timeline-event"><a>Merging node.js and io.js</a></dt>
+                            <span class="tick tick-after"></span>
+                            <dd class="timeline-event-content" id="robotsEX">
+                                <div class="media">
+                                   <img src="images/history/ionnode.png" alt="io and node">
+                                </div><!-- /.media -->
+                                <blockquote>
+                                    <p>Node.js and io.js are merged together under node.js Umbrella. As, node.js accepted open governance model from the help of linux foundation, io.js team voted for the merger.</p>
+                                </blockquote>
+                            </dd><!-- /.timeline-event-content -->
+                        </dl><!-- /.timeline-series -->
+                    </div><!-- /.timeline-wrapper -->
+
+                    <button class="timeline-toggle">+ expand all</button>
+                    <br class="clear">
+                </div><!-- /#timeline -->
+            </div><!-- /.container -->
+        </section>
+        <footer>
+            <p>Copyright © 2015 · L1C6 Group4</p>    
+            <a class="scrollToTop" src=""><img src="images/go_to_top.png"></div></a>
+        </footer>
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/venobox/venobox.min.js"></script>
+        <script type="text/javascript" src="js/timeline.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script>
+        $(document).ready(function() {
+            $.timeliner({
+                timelineContainer:'#timeline',
+            });
+            $('.venobox').venobox();
+        });
+        </script>
+    </body>
+</html>

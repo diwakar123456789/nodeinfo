@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <title> Node.js </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="mainNav">
+                <a href="index.html"><img id="logo" src="images/logo.gif" alt="logo"></a>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="borderLeft"><a href="history.html">History</a></li>
+                <li class="borderLeft"><a href="technology.html">Technology</a></li>
+                <li class="borderLeft"><a href="features.html" class="active">Features</a></li>
+                <li class="borderLeft"><a href="start.html">Let's Start</a></li>
+                </ul>
+            </nav>
+            <div class="miniNav">
+            <div id="navBtn">
+                <div class="active" id="navLine1"></div>
+                <div class="active" id="navLine2"></div>
+                <div class="active" id="navLine3"></div>
+            </div>
+                <ul id="mobNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="features.html" class="active">Features</a></li>
+                    <li><a href="start.html">Let's Start</a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="features" class="mainContent">
+            <article>
+                <h1>HTTP server library</h1>
+                <img src="images/features/http.png" alt="http"/>
+                <p>
+                    In traditional server setup, one needs to use additional server software such as apache, spinner, CL – HTTP, GoServe, etc. to use OS connection properties such as HTTP, TCP/IP. But, node.js has built in function to access connection properties of an OS. And, for creating an HTTP connection, we can use built in HTTP library of node.js.
+                </p>
+            </article> 
+            <article>
+                <h1>Supports NoSQL</h1>
+                <img src="images/features/noSql.png" alt="noSql"/>
+                <p>
+                    NoSQL is the database system where data are managed with key values, graphs, documents, etc. It is scalable than traditional tabular database systems. Therefore, it is efficient to make real-time web application based on node.js. 
+                </p>
+            </article>
+            <article>
+                <h1>Single Threaded Connection</h1>
+                <img src="images/features/singleThreaded.png" alt="single threaded connection"/>
+                <p>
+                    Node.js establishes connection thread for the execution of each process and uses the same connection thread for the further processes if possible. After the execution of a process ends, the connection is not lost yet. So Node.js uses the same connection thread to execute any further processes. So the connection is faster and effective. 
+                </p>
+            </article>
+        </section>
+        <footer>
+            <p>Copyright © 2015 · L1C6 Group4</p>    
+            <a class="scrollToTop" src=""><img src="images/go_to_top.png"></div></a>
+        </footer>
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
